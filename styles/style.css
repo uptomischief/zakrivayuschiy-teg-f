@@ -13,4 +13,20 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-family-main), sans-serif;
+  font-variation-settings: 'wdth' var(--font-weight-variative-text-card), 'wdth' var(--font-weight-variative-title-card);
+  background-image: var(--background-gradient);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* .header__content {
+  block-size: var(--block-width);
+  background-color: #fff;
+} */
+
+.header__title {
+  font-family: var(--font-family-accent);
+  font-size: var(--font-size);
+  font-weight: 400;
 }

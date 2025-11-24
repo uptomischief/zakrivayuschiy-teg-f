@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <!-- Фавиконки -->
+    <link rel="icon" href="./images/favicon.ico" sizes="256x256" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+    <!-- Стили -->
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -11,8 +16,43 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo">
+          <img class="header__logo-image" src="" alt="Логотип сайта" />
+          <h1 class="header__title">&lt;/HTML&gt;</h1>
+          <p>закрывающий тег</p>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- 1 карточка -->
+      <article class="card card__content">
+        <header class="card__header">
+          <h2 class="card__title">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h2>
+        </header>
+        <div class="card__content-text">
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+        <div class="card__button">
+          <button class="card__like-button button">
+            <span class="button__text">Like</span>
+            <svg>
+              <path />
+            </svg>
+          </button>
+        </div>
+      </article>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
