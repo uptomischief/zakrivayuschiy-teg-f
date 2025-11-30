@@ -131,5 +131,30 @@
   }
 } 
 
+.card__content {
+    display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card__content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-family: var(--font-family-main), sans-serif;
+  font-variation-settings: 'wght' var(--font-weight-variative-text-card);
+  font-size: 18px;
+  margin-inline: 25px;
+  margin-block-start: 25px;
+}
+
 
 /* FOOTER */
+
+.save {
+  background-color: var(--bg-color);
+  border: 2px solid rgba(0, 0, 0, 1);
+  margin-inline: 34.5px;
+  margin-block-start: 50px;
+  margin-block-end: 100px;
+}
