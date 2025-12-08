@@ -17,15 +17,13 @@
   </head>
   <body class="page">
     <!-- HEADER -->
-    <header class="header">
-      <div class="header__content">
+    <header class="header content">
         <h1 class="header__title">&lt;/HTML&gt;</h1>
         <p class="header__subtitle">закрывающий тег</p>
-      </div>
     </header>
 
     <!-- MAIN -->
-    <main class="main">
+    <main class="main content">
       <section class="cards">
         <!-- 1 карточка -->
         <article class="card">
@@ -566,7 +564,7 @@
     </main>
 
     <!-- Подвал + дискета -->
-    <footer class="save">
+    <footer class="save content">
       <button
         type="button"
         onclick="window['dialog-id'].showModal();"
@@ -578,7 +576,7 @@
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-      <dialog id="id-dialog" class="dialog">
+      <dialog id="dialog-id" class="dialog">
         <div class="wrapper">
           <div class="dialog__text-block">
             <svg viewBox="0 0 28 28" class="dialog__floppy-icon">

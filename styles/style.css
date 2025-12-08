@@ -15,7 +15,6 @@
   align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  /* padding: 0; */
   margin: 0 auto;
   font-family: var(--font-family-main), sans-serif;
   font-variation-settings: "wdth" var(--font-weight-variative-text-card),
@@ -35,21 +34,25 @@
 /* HEADER */
 
 .header {
-  display: grid;
-  margin-block: 100px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-block-end: 130px;
+  margin-block-start: 100px;
+  margin-block-end: 95px;
   font-family: var(--font-family-accent), monospace;
   font-variation-settings: "wght" var(--font-weight-title);
   color: var(--main-color);
   text-transform: uppercase;
+  background-color: var(--bg-color);
+  text-align: center;
+  border: 2px solid var(--main-color);
 }
 
-.header__content {
-  /* min-width: 375px;
-  min-height: 327px; */
-  padding-block: 121px;
-  /* width: var(--block-width); */
-  border: 2px solid var(--main-color);
-  background-color: var(--bg-color);
+.content {
+  display: grid;
+  grid-template-columns: minmax(320px, 700px);
 }
 
 .header__title {
@@ -57,11 +60,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-block-start: 130px;
   margin-inline: 16px;
 }
 
 .header__subtitle {
-  margin-block-start: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,10 +80,9 @@
 }
 
 .cards {
-  display: flex;
-  flex-direction: column;
   gap: 50px;
-  width: var(--block-width);
+  display: grid;
+  grid-template-columns: minmax(320px, 700px);
 }
 
 .card {
@@ -93,12 +95,12 @@
   font-variation-settings: "wght" var(--font-weight-variative-title-card);
   font-size: 18px;
   color: var(--main-color);
-  margin: 4px 10px; /* 4px auto 4px 10px */
+  margin: 4px 10px; 
 }
 
 .card__image {
   position: relative;
-  outline: 2px solid var(--main-color);
+  /* outline: 2px solid var(--main-color); */
 }
 
 .image {
@@ -173,8 +175,8 @@
 .card__content {
   display: flex;
   flex-direction: column;
-  gap: 26px;
-  margin-block-end: 25px;
+  gap: 0px;
+  margin-block-end: 48px;
 }
 
 .card__content-text {
@@ -184,6 +186,7 @@
   font-family: var(--font-family-main), sans-serif;
   font-variation-settings: "wght" var(--font-weight-variative-text-card);
   font-size: 18px;
+  line-height: 21px;
   margin-inline: 25px;
   margin-block-start: 25px;
 }
@@ -269,6 +272,7 @@
 .like-icon {
   width: 39px;
   height: 36px;
+  transform-origin: center;
 }
 
 .like-icon:hover .main-body {
@@ -399,30 +403,29 @@
   background-color: var(--bg-color);
   color: var(--button-text-color);
   border: 2px solid rgba(0, 0, 0, 1);
-  margin-inline: 34.5px;
-  margin-block-start: 50px;
+  /* margin-inline: 34.5px; */
+  margin-block-start: 46px;
   margin-block-end: 100px;
-  /* /* margin-inline: auto;
+  margin-inline: auto;
   display: flex;
-  justify-content: center; */
+  justify-content: center;
 }
-*/ .button__save {
+ .button__save {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-
-  width: 306px;
-  height: 55px;
-  padding: 15px 20px;
+  gap: 3.5px;
+  width: 335px;
+  padding: 18px 20px;
   background-color: var(--bg-color);
   border: 2px solid var(--main-color);
+    flex-direction: column;
 }
 
 .floppy-icon {
-  width: 28px;
-  height: 28px;
+  width: 21px;
+  height: 21px;
 }
 
 .dialog {
@@ -430,4 +433,57 @@
   border: 2px solid var(--main-color);
   width: 341px;
   height: 191px;
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / .75);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog__text-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog__floppy-icon {
+  width: 39px;
+  height: 39px;
+  mix-blend-mode: difference;
+}
+
+.dialog__text {
+  font-family: var(--font-family-accent), monospace;
+  font-variation-settings: 'wght' var(--font-weight-title);
+  font-size: 14px;
+  color: var(--accent-color);
+  line-height: 21px;
+  width: 234px;
+  text-transform: uppercase;
+}
+
+.dialog__button {
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  width: 293px;
+  height: 38px;
+  text-transform: uppercase;
+  display: block;
+}
+
+
+@media (width <= 375px) {
+
+  .floppy-icon {
+  width: 28px;
+  height: 28px;
+}
 }
