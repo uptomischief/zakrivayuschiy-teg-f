@@ -80,7 +80,7 @@
 }
 
 .cards {
-  gap: 50px;
+  gap: 51.5px;
   display: grid;
   grid-template-columns: minmax(320px, 700px);
 }
@@ -176,7 +176,7 @@
   display: flex;
   flex-direction: column;
   gap: 0px;
-  margin-block-end: 48px;
+  margin-block-end: 25px;
 }
 
 .card__content-text {
@@ -189,6 +189,7 @@
   line-height: 21px;
   margin-inline: 25px;
   margin-block-start: 25px;
+  margin-block-end: 21px;
 }
 
 .card__buttons {
@@ -404,23 +405,22 @@
   color: var(--button-text-color);
   border: 2px solid rgba(0, 0, 0, 1);
   /* margin-inline: 34.5px; */
-  margin-block-start: 46px;
+  margin-block-start: 47px;
   margin-block-end: 100px;
   margin-inline: auto;
   display: flex;
   justify-content: center;
+  grid-template-columns: minmax(320px, 700px);
 }
  .button__save {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 3.5px;
-  width: 335px;
-  padding: 18px 20px;
+  gap: 7px;
+  padding: 17px 20px;
   background-color: var(--bg-color);
   border: 2px solid var(--main-color);
-    flex-direction: column;
 }
 
 .floppy-icon {
@@ -431,8 +431,8 @@
 .dialog {
   background: var(--bg-color);
   border: 2px solid var(--main-color);
-  width: 341px;
-  height: 191px;
+  /* width: 341px;
+  height: 191px; */
 }
 
 .dialog::backdrop {
@@ -486,4 +486,10 @@
   width: 28px;
   height: 28px;
 }
+
+.button__save {
+  flex-direction: column;
+}
+
+
 }
