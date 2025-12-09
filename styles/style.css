@@ -361,7 +361,6 @@
   height: 100%;
   background-color: var(--main-color);
   transition: width 0.5s ease-in-out;
-  z-index: 1;
 }
 
 .button:hover::before {
@@ -408,6 +407,7 @@
   justify-content: center;
   grid-template-columns: minmax(320px, 700px);
 }
+
 .button__save {
   display: flex;
   flex-direction: row;

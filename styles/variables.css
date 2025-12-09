@@ -21,9 +21,9 @@
   --label-color: rgb(255, 255, 255);
   --animation-fill-color: rgb(255, 0, 0);
   --text-like-button: rgb(255, 255, 255);
-  --heart-contour-color: var(--main-color);
+  --heart-contour-color: rgba(0, 0, 0, 1);
   --heart-core-color: transparent;
   --heart-main-body-color: transparent;
-  --button-text-color: var(--main-color);
-  --button-hover-text-color: var(--bg-color);
+  --button-text-color: rgba(0, 0, 0, 1);
+  --button-hover-text-color: rgba(255, 255, 255, 1);
 }
