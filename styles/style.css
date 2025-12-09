@@ -95,12 +95,11 @@
   font-variation-settings: "wght" var(--font-weight-variative-title-card);
   font-size: 18px;
   color: var(--main-color);
-  margin: 4px 10px; 
+  margin: 4px 10px;
 }
 
 .card__image {
   position: relative;
-  /* outline: 2px solid var(--main-color); */
 }
 
 .image {
@@ -111,7 +110,7 @@
 }
 
 /* Фильтры */
-/* .filter-no {
+.filter-no {
   filter: none;
 }
 
@@ -141,7 +140,7 @@
 
 .filter-saturate-hue-rotate {
   filter: saturate(150%) hue-rotate(45deg);
-} */
+}
 /* Конец фильтры */
 
 .label {
@@ -235,7 +234,6 @@
   align-items: center;
   gap: 5px;
   align-self: flex-end;
-  /* margin: ; */
 }
 
 .card__icon-button {
@@ -382,7 +380,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: auto;
   width: 130px;
   height: 38px;
   margin-inline-end: 25px;
@@ -395,7 +392,7 @@
 }
 
 .card__icon-button:has(.is-liked) + .card__like-button {
-  padding: 10px 20px; /*нарандом для понятки, поменять*/
+  padding: 10px 20px;
 }
 
 /* FOOTER */
@@ -404,7 +401,6 @@
   background-color: var(--bg-color);
   color: var(--button-text-color);
   border: 2px solid rgba(0, 0, 0, 1);
-  /* margin-inline: 34.5px; */
   margin-block-start: 47px;
   margin-block-end: 100px;
   margin-inline: auto;
@@ -412,7 +408,7 @@
   justify-content: center;
   grid-template-columns: minmax(320px, 700px);
 }
- .button__save {
+.button__save {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -429,16 +425,15 @@
   mix-blend-mode: difference;
 }
 
-
 .dialog {
   background: var(--bg-color);
   border: 2px solid var(--main-color);
-  /* width: 341px;
-  height: 191px; */
+  width: 353px;
+  height: 191px;
 }
 
 .dialog::backdrop {
-  background: rgb(0 0 0 / .75);
+  background: rgb(0 0 0 / 0.75);
 }
 
 .wrapper {
@@ -464,7 +459,7 @@
 
 .dialog__text {
   font-family: var(--font-family-accent), monospace;
-  font-variation-settings: 'wght' var(--font-weight-title);
+  font-variation-settings: "wght" var(--font-weight-title);
   font-size: 14px;
   color: var(--accent-color);
   line-height: 21px;
@@ -481,39 +476,41 @@
   display: block;
 }
 
-
 @media (width <= 375px) {
-
   .floppy-icon {
-  width: 28px;
-  height: 28px;
-}
+    width: 28px;
+    height: 28px;
+  }
 
-.button__save {
-  flex-direction: column;
-}
+  .button__save {
+    flex-direction: column;
+  }
 
-.header__title {
-  margin-block-start: 95px;
-}
-.header {
-  padding-block-start: 25px;
-  padding-block-end: 120px;
-}
+  .header__title {
+    margin-block-start: 95px;
+  }
+  .header {
+    padding-block-start: 25px;
+    padding-block-end: 120px;
+  }
 
-.card:nth-child(1){
-  margin-block-start: 5px;
-}
+  .card:nth-child(1) {
+    margin-block-start: 5px;
+  }
 
-.card__content {
-  gap: 7.5px;
-}
+  .card__content {
+    gap: 7.5px;
+  }
 
-.cards {
-  gap: 47.5px;
-}
+  .cards {
+    gap: 47.5px;
+  }
 
-.dialog__button {
-width: 261px;
-}
+  .dialog__button {
+    width: 261px;
+  }
+
+  .dialog__text {
+    width: 200px;
+  }
 }
