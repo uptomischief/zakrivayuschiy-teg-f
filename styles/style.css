@@ -150,7 +150,6 @@
   font-variation-settings: "wght" var(--font-weight-title);
   font-size: 14px;
   color: var(--main-color);
-  font-size: 14px;
   text-transform: uppercase;
   position: absolute;
   top: 29px;
@@ -196,21 +195,6 @@
   justify-content: end;
   align-items: center;
   gap: 12px;
-}
-
-.button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border: 2px solid var(--main-color);
-  background-color: var(--bg-color);
-  font-family: var(--font-family-accent), monospace;
-  font-size: 14px;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
-  overflow: hidden;
 }
 
 .button:focus {
@@ -266,12 +250,6 @@
 .sparks {
   opacity: 0;
   fill: var(--heart-like-click);
-}
-
-.like-icon {
-  width: 39px;
-  height: 36px;
-  transform-origin: center;
 }
 
 .like-icon:hover .main-body {
@@ -350,6 +328,12 @@
   cursor: pointer;
   transition: box-shadow 0.3s ease;
   min-height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-color);
+  overflow: hidden;
 }
 
 .button::before {
@@ -365,14 +349,6 @@
 
 .button:hover::before {
   width: 100%;
-}
-
-.button:focus {
-  outline: none;
-}
-
-.button:focus-visible {
-  box-shadow: 2px 2px 0 var(--main-color);
 }
 
 .card__like-button {
