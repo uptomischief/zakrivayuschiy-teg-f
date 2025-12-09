@@ -111,7 +111,7 @@
 
 /* Фильтры */
 .filter-no {
-  filter: none;
+  filter: brightness(200%);
 }
 
 .filter-contrast {
