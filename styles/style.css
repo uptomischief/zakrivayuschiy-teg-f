@@ -426,7 +426,9 @@
 .floppy-icon {
   width: 21px;
   height: 21px;
+  mix-blend-mode: difference;
 }
+
 
 .dialog {
   background: var(--bg-color);
