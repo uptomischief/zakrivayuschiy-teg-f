@@ -33,7 +33,7 @@
           <div class="card__image">
             <img
               src="./images/image_0spr.png"
-              alt="car"
+              alt="машина"
               class="image filter-no"
             />
             <span class="label"> &lt;/HTML&gt; </span>
@@ -98,7 +98,7 @@
           <div class="card__image">
             <img
               src="./images/image_1spr-1.png"
-              alt="car"
+              alt="машина"
               class="image filter-contrast"
             />
             <span class="label"> &lt;/HTML&gt; </span>
@@ -166,7 +166,7 @@
           <div class="card__image">
             <img
               src="./images/image_1spr-2.png"
-              alt="car"
+              alt="машина"
               class="image filter-saturate"
             />
             <span class="label"> &lt;/HTML&gt; </span>
@@ -231,7 +231,7 @@
           <div class="card__image">
             <img
               src="./images/image_2spr-1.png"
-              alt="car"
+              alt="машина"
               class="image filter-grayscale"
             />
             <span class="label"> &lt;/HTML&gt; </span>
@@ -298,7 +298,7 @@
           <div class="card__image">
             <img
               src="./images/image_2spr-2.png"
-              alt="car"
+              alt="машина"
               class="image filter-invert"
             />
             <span class="label"> &lt;/HTML&gt; </span>
@@ -366,7 +366,7 @@
           <div class="card__image">
             <img
               src="./images/image_3spr-1.png"
-              alt="car"
+              alt="машина"
               class="image filter-hue-rotate"
             />
             <span class="label"> &lt;/HTML&gt; </span>
@@ -431,7 +431,7 @@
           <div class="card__image">
             <img
               src="./images/image_3spr-2.png"
-              alt="car"
+              alt="машина"
               class="image filter-blur"
             />
             <span class="label"> &lt;/HTML&gt; </span>
@@ -498,7 +498,7 @@
           <div class="card__image">
             <img
               src="./images/image_4spr.png"
-              alt="car"
+              alt="машина"
               class="image filter-saturate-hue-rotate"
             />
             <span class="label"> &lt;/HTML&gt; </span>
@@ -561,39 +561,39 @@
           </div>
         </article>
       </section>
-    </main>
 
-    <!-- Подвал + дискета -->
-    <footer class="save content">
-      <button
-        type="button"
-        onclick="window['dialog-id'].showModal();"
-        aria-controls="dialog-id"
-        class="button button__save"
-      >
-        <svg viewBox="0 0 21 21" class="floppy-icon">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-      <dialog id="dialog-id" class="dialog">
-        <div class="wrapper">
-          <div class="dialog__text-block">
-            <svg viewBox="0 0 21 21" class="dialog__floppy-icon">
-              <use href="./svg/floppy.svg#floppy"></use>
-            </svg>
-            <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+      <!-- Подвал + дискета -->
+      <section class="save content">
+        <button
+          type="button"
+          onclick="window['dialog-id'].showModal();"
+          aria-controls="dialog-id"
+          class="button button__save"
+        >
+          <svg viewBox="0 0 21 21" class="floppy-icon">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+        <dialog id="dialog-id" class="dialog">
+          <div class="wrapper">
+            <div class="dialog__text-block">
+              <svg viewBox="0 0 21 21" class="dialog__floppy-icon">
+                <use href="./svg/floppy.svg#floppy"></use>
+              </svg>
+              <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+            </div>
+            <button
+              type="submit"
+              onclick="window['dialog-id'].close()"
+              class="button dialog__button"
+            >
+              <span class="button__text">ok</span>
+            </button>
           </div>
-          <button
-            type="submit"
-            onclick="window['dialog-id'].close()"
-            class="button dialog__button"
-          >
-            <span class="button__text">ok</span>
-          </button>
-        </div>
-      </dialog>
-    </footer>
+        </dialog>
+      </section>
+    </main>
 
     <script src="./scripts/like.js"></script>
   </body>
